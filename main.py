@@ -34,8 +34,8 @@ for party in all_parties:
     # Update the Pydantic object's prc_votes attribute directly
     party.prc_votes = st.sidebar.number_input(
         f"{party.name} %",
-        0.0, 50.0,
-        float(party.prc_votes)
+        min_value=0.0, max_value=50.0, step=0.1,
+        value=float(party.prc_votes)
     )
 
 # --- 2. Calculate Seats ---
