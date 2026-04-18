@@ -27,22 +27,22 @@ all_parties: List[Party] = [
     Party(
         name="Vazrazhdane",
         color="#000000",
-        prc_votes=12.1
+        prc_votes=8.1
     ),
     Party(
         name="DPS", 
         color="#3C0652",
-        prc_votes=8.4
+        prc_votes=7.5
     ),
     Party(
         name="ITN",
         color="#C1831F",
-        prc_votes=4.5
+        prc_votes=3.5
     ),
     Party(
         name="BSP",
         color="#CC1414",
-        prc_votes=4.0
+        prc_votes=3.5
 
     )
 ]
