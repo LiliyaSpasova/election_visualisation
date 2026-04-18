@@ -23,21 +23,18 @@ def generate_parliament_coords(total_seats=240):
 
 # --- UI Setup ---
 st.title("🇧🇬 Bulgaria 2026 Coalition Visualizer")
-st.sidebar.header("Select Coalition Partners")
 
 selected_parties = []
 current_total_seats = 0
-# --- Sidebar Inputs ---
-st.sidebar.header("Poll Percentages")
 updated_pcts = {}
 # --- 1. Update Percentages via Sliders ---
 st.sidebar.header("Poll Percentages")
 
 for party in all_parties:
     # Update the Pydantic object's prc_votes attribute directly
-    party.prc_votes = st.sidebar.slider(
-        f"{party.name} %", 
-        0.0, 50.0, 
+    party.prc_votes = st.sidebar.number_input(
+        f"{party.name} %",
+        0.0, 50.0,
         float(party.prc_votes)
     )
 
