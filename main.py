@@ -1,7 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
-from models import Party,all_parties
+from models import all_parties
 
 from calculate_seats import calculate_seats
 
